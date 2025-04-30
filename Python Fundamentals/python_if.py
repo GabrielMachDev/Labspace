@@ -1,46 +1,44 @@
-vendas = 1500
-meta = 1300
+sales = 1500
+goal = 1300
 
-# > maior que
-# < menor que
-# >= maior ou igual
-# <= menor ou igual
-# == igual
-# != diferente
+# > greater than
+# < less than
+# >= greater or equal
+# <= less or equal
+# == equal
+# != different
 
-if vendas >= meta:
-    print("Vendedor ganha bônus")
-    print("Bateu a meta de vendas")
-    bonus = 0.1 * vendas
-    print("Bonus do vendedor:", bonus)
+if sales >= goal:
+    print("Seller gets bonus")
+    print("Hit the sales taget")
+    bonus = 0.1 * sales
+    print("Seller bonus:", bonus)
 else:
-    print("Vendedor não ganha bonus")
-    print("Não bateu a meta de vendas")
+    print("Seller don't get bonus")
+    print("Dont hit the targets")
 
-print("Acabou o programa")
+# second case
+sales = 2100
+enterprise_sales = 22000
+enterprise_goal = 20000
+first_goal = 1300 # to win 10%
+second_goal = 2000 # to win 13%
 
-# 2º cenário
-vendas = 2100
-vendas_empresa = 22000
-meta_empresa = 20000
-meta1 = 1300 # ganhar 10%
-meta2 = 2000 # ganhar 13%
-
-if vendas >= 2000 and vendas_empresa >= meta_empresa:
-    bonus = 0.13 * vendas
-elif vendas >= 1300 and vendas_empresa >= meta_empresa:
-    bonus = 0.1 * vendas
+if sales >= 2000 and enterprise_sales >= enterprise_goal:
+    bonus = 0.13 * sales
+elif sales >= 1300 and enterprise_sales >= enterprise_goal:
+    bonus = 0.1 * sales
 else:
     bonus = 0
 
 print("Bonus:", bonus)
 
 
-lista_produtos = ["airpod", "ipad", "iphone", "macbook"]
-produto_procurado = input("Procure um produto: ")
-produto_procurado = produto_procurado.lower()
+product_list = ["airpod", "ipad", "iphone", "macbook"]
+product_sought = input("Search a product: ")
+product_sought = product_sought.lower()
 
-if produto_procurado in lista_produtos:
-    print("Produto no estoque")
+if product_sought in product_list:
+    print("Product in stock")
 else:
-    print("não temos esse produto")
+    print("We don't have this product")

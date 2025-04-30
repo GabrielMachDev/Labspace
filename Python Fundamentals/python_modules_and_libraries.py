@@ -5,15 +5,15 @@ import os
 # pyautogui.press("win")
 # pyautogui.write("chrome")
 
-# print(os.listdir("arquivos"))
+# print(os.listdir("files"))
 # print(datetime.date.today())
 
-lista_arquivos = os.listdir("arquivos")
-# os.rename("arquivos/abr22.txt", "arquivos/22/abr22.txt")
+lista_arquivos = os.listdir("files")
+# os.rename("files/abr22.txt", "files/22/abr22.txt")
 
-for arquivo in lista_arquivos:
-    if ".txt" in arquivo:
-        if "22" in arquivo:
-            os.rename(f"arquivos/{arquivo}", f"arquivos/22/{arquivo}")
-        elif "23" in arquivo:
-            os.rename(f"arquivos/{arquivo}", f"arquivos/23/{arquivo}")
+for file in files_list:
+    if ".txt" in file:
+        if "22" in file:
+            os.rename(f"files/{file}", f"files/22/{file}")
+        elif "23" in file:
+            os.rename(f"files/{file}", f"files/23/{file}")

@@ -52,4 +52,4 @@ print(lastname)
 
 # special case - text numeric formatting
 profit_margin = round(profit_margin, 2)
-print(f"Enterprise Billing: R${billing:.2f}, Cost: R${cost:.2f}, Profit: R${profit:.2f}, Margin: {profit_margin:.0%}")
+print(f"Enterprise Billing: ${billing:.2f}, Cost: ${cost:.2f}, Profit: ${profit:.2f}, Margin: ${profit_margin:.0%}")

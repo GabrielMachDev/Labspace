@@ -1,55 +1,55 @@
-faturamento = 1200
-custo = 700
-lucro = faturamento - custo
-margem_lucro = lucro / faturamento
-print(f"Faturamento da empresa: {faturamento}, Custo: {custo}, Lucro: {lucro}")
+billing = 1200
+cost = 700
+profit = billing - cost
+profit_margin = profit / billing
+print(f"Enterprise billing: {billing}, Cost: {cost}, Profit: {profit}")
 
-email_cliente = "lira@gmail.com"
+client_email = "clientemail@gmail.com"
 
-# maiuscula
-email_cliente = email_cliente.upper()
-print(email_cliente)
-# minuscula
-email_cliente = email_cliente.lower()
-print(email_cliente)
+# uppercase
+client_email = client_email.upper()
+print(client_email)
+# lowercase
+client_email = client_email.lower()
+print(client_email)
 
 # "@"
-print(email_cliente.find("@")) # -1 quando não encontrar
+print(client_email.find("@")) # -1 cant find
 
-# tamanho do texto
-print(len(email_cliente))
+# text size
+print(len(client_email))
 
-# pegar um caractere
-print(email_cliente[4])
+# catch a character
+print(client_email[4])
 
-print(email_cliente[-4])
+print(client_email[-4])
 
-# pegar um pedaço do texto
-print(email_cliente[4:])
+# get a piece of text
+print(client_email[4:])
 
-# trocar um pedaço do texto
-novo_email = email_cliente.replace("gmail.com", "hotmail.com")
-print(novo_email)
+# change a piece of text
+new_email = client_email.replace("gmail.com", "hotmail.com")
+print(new_email)
 
-nome = "joao lira"
-# trabalhar com nomes
-print(nome.capitalize())
-print(nome.title())
+name = "client"
+# work with names
+print(name.capitalize())
+print(name.title())
 
-# pegar o servidor do email
-posicao_arroba = email_cliente.find("@") + 1
-servidor = email_cliente[posicao_arroba:]
-print(servidor)
+# get the email server
+at_position = client_email.find("@") + 1
+server = client_email[at_position:]
+print(server)
 
-# pegar o 1º nome
-posicao_espaco = nome.find(" ")
-primeiro_nome = nome[:posicao_espaco]
+# get the first name
+space_position = name.find(" ")
+first_name = name[:space_position]
 
-# pegar o sobrenome
-sobrenome = nome[posicao_espaco+1:]
-print(primeiro_nome)
-print(sobrenome)
+# get the lastname
+lastname = name[space_position+1:]
+print(first_name)
+print(lastname)
 
-# casos especiais - formatações numéricas em texto
-margem_lucro = round(margem_lucro, 2)
-print(f"Faturamento da empresa: R${faturamento:.2f}, Custo: R${custo:.2f}, Lucro: R${lucro:.2f}, Margem: {margem_lucro:.0%}")
+# special case - text numeric formatting
+profit_margin = round(profit_margin, 2)
+print(f"Enterprise Billing: R${billing:.2f}, Cost: R${cost:.2f}, Profit: R${profit:.2f}, Margin: {profit_margin:.0%}")

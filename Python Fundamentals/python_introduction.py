@@ -1,27 +1,27 @@
-faturamento = 1200 # tipo: int -> numero inteiro
-custo = 750.0 # tipo: float -> numero com casa decimal 
+billing = 1200 # type int -> integer number
+cost = 750.0 # type float -> number with decimal place 
 
-novas_vendas = 100
-faturamento = faturamento + novas_vendas
+new_sales = 100
+billing = billing + new_sales
 
-imposto = faturamento * 0.1
-lucro = faturamento - custo - imposto
+tax = billing * 0.1
+profit = billing - cost - tax
 
-margem_lucro = lucro / faturamento
+profit_margin = profit / billing
 
-print("Faturamento foi de ", faturamento)
-print("O custo foi de ", custo)
-print("O lucro foi de ", lucro)
-print("A margem de lucro foi de", round(margem_lucro, 3))
+print("The revenue was ", billing)
+print("The cost was ", cost)
+print("The profit was ", profit)
+print("The profit margin was", round(profit_margin, 3))
 
-mensagem = "O faturamento da loja foi de tanto" # 
-email = "emailqualquer@gmail.com" # tipo string -> texto
+meassage = "The billing was..." 
+email = "email@gmail.com" # type string -> text
 
-teve_lucro = True # variavel tipo boolean
+made_profit = True # variable type boolean
 
-# Mod -> % resto da divisão
-tempo_contrato = 170
-tempo_anos = 170 / 12
-print("Tempo em anos", int(tempo_anos))
-tempo_meses = 170 % 12
-print("Tempo em meses", tempo_meses)
+# Mod -> % rest of the division
+contract_time = 170
+time_years = 170 / 12
+print("Time in years ", int(time_years))
+time_months = 170 % 12
+print("Time in months ", time_months)

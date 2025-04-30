@@ -1,52 +1,51 @@
-dic_produtos = {"airpod": 2000, "ipad": 9000, "iphone": 6000, "macbook": 11000}
+dic_products = {"airpod": 2000, "ipad": 9000, "iphone": 6000, "macbook": 11000}
 
-# pegar um elemento
-print(dic_produtos["iphone"])
+# take an element
+print(dic_products["iphone"])
 
-# editar um elemento
-dic_produtos["iphone"] = dic_produtos["iphone"] * 1.3
-print(dic_produtos)
+# edit an element
+dic_products["iphone"] = dic_products["iphone"] * 1.3
+print(dic_products)
 
-# quantidade de itens
-print(len(dic_produtos))
+# quantity of items
+print(len(dic_products))
 
-# retirar um item do dicionario
-# dic_produtos.pop("airpod")
-# print(dic_produtos)
+# remove a item
+# dic_products.pop("airpod")
+# print(dic_products)
 
-# adicionar um item no dicionario
-dic_produtos["apple watch"] = 2500
-print(dic_produtos)
+# add a item
+dic_products["apple watch"] = 2500
+print(dic_products)
 
-# verificar se um item existe no dicionário
-if "iphone" in dic_produtos:
-    print("Existe produto")
+# check a item exist
+if "iphone" in dic_products:
+    print("Product exists")
 else:
-    print("Não existe")
+    print("No exists")
 
-# verificar se um valor existe nos valores do dicionário
-# if 9000 in dic_produtos.values():
-#     print("Existe")
+# check if a value exists in the dictionary values
+# if 9000 in dic_products.values():
+#     print("Exists")
 # else:
-#     print("Não existe")
+#     print("No exists")
     
-nome_produto = input("Nome do produto: ")
-preco_produto = input("Preço do produto: ")
+product_name = input("Product name: ")
+product_price = input("Product price: ")
 
-# cadastrar o novo produto (se o produto não existir)
-# caso o produto exista ele vai editar o produto
-nome_produto = nome_produto.lower()
-preco_produto = float(preco_produto)
+# register the new product(if the product don't exist)
+# if th product exists it will edit the product
+product_name = product_name.lower()
+product_price = float(product_price)
 
-dic_produtos[nome_produto] = preco_produto
-print(dic_produtos)
+dic_products[product_name] = product_price
+print(dic_products)
 
 
-# além disso: o programa tem que no final atualizar o preço de todos os produtos para
-# os novos valores que são 10% a mais do que o preço original
+# update the price of all products and more 10%
 
-for produto in dic_produtos:
-    novo_preco = dic_produtos[produto] * 1.1
-    dic_produtos[produto] = novo_preco
+for product in dic_products:
+    new_preco = dic_products[product] * 1.1
+    dic_products[product] = new_preco
 
-print(dic_produtos)
+print(dic_products)

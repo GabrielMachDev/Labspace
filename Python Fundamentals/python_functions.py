@@ -1,28 +1,26 @@
-lista_precos = [1500, 1000, 800, 3000]
+price_list = [1500, 1000, 800, 3000]
 
-# imposto
-# aliquota1 - IR = 0.2, se o preço do produto for até 2000, acima disso a aliquota é 0.3
-# aliquota2 - ISS = 0.15
-# aliquota3 - CSLL = 0.05
+# tax
+# aliquot1 - IR = 0.2, if the price of the product is up to 2000, above that the rate is 0.3
+# aliquot2 - ISS = 0.15
+# aliquot3 - CSLL = 0.05
 
-def calcula_imposto_total(preco):
-    if preco <= 2000:
-        imposto_ir = 0.2 * preco
+def calc_total_tax(price):
+    if price <= 2000:
+        tax_ir = 0.2 * price
     else:
-        imposto_ir = 0.3 * preco
-    imposto_iss = 0.15 * preco
-    imposto_csll = 0.05 * preco
-    imposto_total = imposto_ir + imposto_iss + imposto_csll
-    return imposto_total
+        tax_ir = 0.3 * price
+    tax_iss = 0.15 * price
+    tax_csll = 0.05 * price
+    total_tax = tax_ir + tax_iss + tax_csll
+    return total_tax
 
+for price in price_list:
+    total_tax = calc_total_tax(price)
+    print(f"Total tax on the product of ${price}: ${total_tax}")
 
-for preco in lista_precos:
-    imposto_total = calcula_imposto_total(preco)
-    print(f"Imposto total sobre o produto de R${preco}: R${imposto_total}")
+new_products_list = [3000, 5000, 6000, 7000]
 
-nova_lista_produtos = [3000, 5000, 6000, 7000]
-
-for preco in nova_lista_produtos:
-    imposto_total = calcula_imposto_total(preco)
-    print(f"Imposto total sobre o produto de R${preco}: R${imposto_total}")
-
+for price in new_products_list:
+    total_tax = calc_total_tax(price)
+    print(f"Total tax on the product of ${price}: ${total_tax}")

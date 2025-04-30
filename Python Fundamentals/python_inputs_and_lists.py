@@ -1,62 +1,62 @@
 # inputs
-# email = input("Escreva seu e-mail: ")
-# nome = input("Seu primeiro nome: ")
+# email = input("Write your email: ")
+# name = input("Your first name: ")
 
-# print(nome, email)
+# print(name, email)
 
-# print(f"{nome}, verifique seu email: {email} que enviamos um link de confirmação")
+# print(f"{name}, check your email: {email} that we sent a confirmation email")
 
-# faturamento = float(input("Escreva o faturamento: "))
+# billing = float(input("Write billing: "))
 
-# imposto = faturamento * 0.1
-# print(imposto)
+# tax = billing* 0.1
+# print(tax)
 
-# listas
-vendas = [100, 50, 14, 20, 30, 700]
+# lists
+sales = [100, 50, 14, 20, 30, 700]
 
-# soma dos elementos
-total_vendas = sum(vendas)
-print(total_vendas)
+# sum of elements
+total_sales = sum(sales)
+print(total_sales)
 
-# tamanho da lista
-quantidade_vendas = len(vendas)
-print(quantidade_vendas)
+# list size
+sales_quantity = len(sales)
+print(sales_quantity)
 
-# max e min
-print(max(vendas))
-print(min(vendas))
+# max and min
+print(max(sales))
+print(min(sales))
 
-# pegar posição
-print(vendas[5])
+# pick up position
+print(sales[5])
 
-lista_produtos = ["iphone", "airpod", "ipad", "macbook"]
+product_list = ["iphone", "airpod", "ipad", "macbook"]
 
-# produto_procurado = input("Pesquise pelo nome do produto: ")
-# produto_procurado = produto_procurado.lower()
+# product_sought = input("Search by name of the product: ")
+# product_sought = product_sought.lower()
 
-# print(produto_procurado in lista_produtos)
+# print(product_sought in product_list)
 
-# adicionar um item
-lista_produtos.append("apple watch")
-print(lista_produtos)
+# add item
+product_list.append("apple watch")
+print(product_list)
 
-# remover um item
-lista_produtos.remove("apple watch")
-print(lista_produtos)
+# remove item
+product_list.remove("apple watch")
+print(product_list)
 
-lista_produtos.pop(0)
-print(lista_produtos)
+product_list.pop(0)
+print(product_list)
 
-# editar um item 
-precos = [1000, 1500, 3500]
-precos[0] = precos[0] * 1.5
-print(precos)
+# edit item 
+prices = [1000, 1500, 3500]
+prices[0] = prices[0] * 1.5
+print(prices)
 
-# contar quantas vezes um item aparece na lista
-lista_produtos = ["iphone", "airpod", "ipad", "macbook", "iphone", "ipad", "iphone"]
+# count equal items
+product_list = ["iphone", "airpod", "ipad", "macbook", "iphone", "ipad", "iphone"]
 
-print(lista_produtos.count("apple watch"))
+print(product_list.count("apple watch"))
 
-# ordenar uma lista
-vendas.sort()
-print(vendas)
+# sort list
+sales.sort()
+print(sales)

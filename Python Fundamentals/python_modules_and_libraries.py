@@ -8,7 +8,7 @@ import os
 # print(os.listdir("files"))
 # print(datetime.date.today())
 
-lista_arquivos = os.listdir("files")
+files_list = os.listdir("files")
 # os.rename("files/abr22.txt", "files/22/abr22.txt")
 
 for file in files_list:

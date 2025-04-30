@@ -1,29 +1,30 @@
-# janela para selecionar a pasta do nosso computador
+
 import os
 from tkinter.filedialog import askdirectory
 import shutil
 import datetime
 
-nome_pasta_selecionada = askdirectory()
+selected_folder = askdirectory()
 
-lista_arquivos = os.listdir(nome_pasta_selecionada)
+files_list = os.listdir(selected_folder)
 
-# fazer o backup dos arquivos que estão nessa pasta
-nome_pasta_backup = "backup"
-nome_completo_pasta_backup = f"{nome_pasta_selecionada}/{nome_pasta_backup}"
-if not os.path.exists(nome_completo_pasta_backup):
-    os.mkdir(nome_completo_pasta_backup)
+# backup the files in this folder
+backup_name = "backup"
+complete_backup_name = f"{selected_folder}/{backup_name}"
+if not os.path.exists(complete_backup_name):
+    os.mkdir(complete_backup_name)
 
-data_atual = datetime.datetime.today().strftime("%Y-%m-%d %H%M%S")
+actual_date = datetime.datetime.today().strftime("%Y-%m-%d %H:%M:%S")
 
-for arquivo in lista_arquivos:
-    nome_completo_arquivo = f"{nome_pasta_selecionada}/{arquivo}"
-    nome_final_arquivo = f"{nome_completo_pasta_backup}/{data_atual}/{arquivo}"
+for file in files_list:
+    complete_backup_name = f"{selected_folder}/{file}"
+    final_backup_name = f"{complete_backup_name}/{actual_date}/{file}"
     
-    if not os.path.exists(f"{nome_completo_pasta_backup}/{data_atual}"):
-        os.mkdir(f"{nome_completo_pasta_backup}/{data_atual}")
+    if not os.path.exists(f"{complete_backup_name}/{actual_date}"):
+        os.mkdir(f"{complete_backup_name}/{actual_date}")
     
-    if "." in arquivo:
-        shutil.copy2(nome_completo_arquivo, nome_final_arquivo)
-    elif "backup" != arquivo:
-        shutil.copytree(nome_completo_arquivo, nome_final_arquivo)
+    if "." in file:
+        shutil.copy2(complete_backup_name, final_backup_name)
+    elif "backup" != file:
+        shutil.copytree(complete_backup_name, final_backup_name)
+        

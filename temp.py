@@ -7,7 +7,7 @@ nomes_meses = [
 # Lista para armazenar as temperaturas máximas
 temperaturas_maximas = [None] * 12  # Inicializa com None para garantir que todos os meses sejam preenchidos
 
-print("📥 Informe os dados meteorológicos de 2021 (temperatura máxima por mês):")
+print("Informe os dados meteorológicos de 2021 (temperatura máxima por mês):")
 
 # Coleta e validação dos dados
 meses_preenchidos = set()
